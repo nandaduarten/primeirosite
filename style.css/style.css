@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: rgba(106, 13, 173, 0.6); /* roxo translúcido */
+    background: rgba(80, 18, 124, 0.993); /* roxo translúcido */
     border-radius: 1px; /* cantos arredondados */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* sombra para dar efeito flutuante */
     border: 1px solid rgba(255, 255, 255, 0.1);
