@@ -95,3 +95,16 @@ body {
     max-width: 800px;
     line-height: 1.4;
 }
+figcaption {
+    font-size: 0.85em;
+    color: #0c0c0c;
+    margin-top: 5px;
+}
+figcaption img {
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
