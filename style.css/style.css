@@ -1,119 +1,97 @@
+/* Fundo roxo claro */
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #000000, #6A0DAD, #000000);
-    font-family: Arial, sans-serif;
-    color: white;
+    background-color: #f3e6ff; /* roxo bem clarinho */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
 }
-/* siderbar fixa */
+
+/* Sidebar roxa com efeito vidro */
+/* Sidebar roxa transparente flutuante */
 .sidebar {
     position: fixed;
     left: 0;
-    top: 0;
     width: 260px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    padding: 20px;
+    height: calc(100% - 0px); /* mantém margem em cima e embaixo */
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background: none;
+    gap: 15px;
+    background: rgba(106, 13, 173, 0.6); /* roxo translúcido */
+    border-radius: 1px; /* cantos arredondados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* sombra para dar efeito flutuante */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* logo */
+
+
+/* Logo */
 .sidebar img {
-    max-width: 150px;
+    max-width: 140px;
+    margin-bottom: 10px;
 }
-/* menu */
+
+/* Menu */
 .sidebar menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    padding: 15px;
 }
+
 .sidebar menu li {
-    margin: 15px 0;
+    margin: 8px 0;
 }
+
 .sidebar menu a {
     color: white;
+    text-shadow: 1px 1px 2px black; /* borda preta */
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
+
 .sidebar menu a:hover {
-    color: #b266ff; /* roxo claro no hover */
+    background-color: rgba(255, 255, 255, 0.15);
 }
-.sidebar h1,
-.sidebar h2 
-.sidebar p {
-    background: none;
-    margin: 0;
-}
+
+/* Títulos e textos */
 .sidebar h1 {
-    font-size: 1.8em;
-    margin-top: 10px;
+    font-size: 1.4em;
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
 }
 
 .sidebar h2 {
-    font-weight: normal;
-    color: #d1aaff;
-    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 2px black;
 }
 
 .sidebar p {
-    line-height: 1.5;
+    line-height: 1.3;
+    font-size: 0.85em;
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
 }
-/* Conteúdo principal deslocado */
+
+/* Conteúdo principal */
 .main-content {
-    margin-left: 280px; /* espaço da sidebar */
-    padding: 40px;
-}
-/* Títulos */
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    margin-left: 280px;
+    padding: 20px;
+    color: black;
 }
 
-h2 {
-    font-weight: normal;
-    color: #d1aaff;
-    margin-bottom: 20px;
+.main-content h1 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
 }
 
-p {
-    line-height: 1.5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-
-}
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    color: rgb(110, 28, 148);
-    text-shadow: 2px 2px 2px rgb(8, 8, 8);
-}
-h2{
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    color: rgb(114, 24, 150);
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: rgb(252, 252, 252);
-    line-height: 1.5;
-    text-align: center;
-}
-menu {
-    background-color: #05000a;
-    padding: 10px;
-    border-radius: 5px;
+.main-content p {
+    font-size: 0.95em;
+    max-width: 800px;
+    line-height: 1.4;
 }
