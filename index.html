@@ -28,26 +28,58 @@
     </div>
 
     <!-- Conteúdo principal -->
-    <div class="main-content">
-        <figcaption>
-            <img src="https://cdnv2.moovin.com.br/bigcap/imagens/produtos/det/bone-adidas-essentials-logo-ea2c8011fced6ceaeca6f67e8083a2c2.jpg" alt="Produto 1">
-            <h1>Boné Adidas Essentials</h1>
-            <p>50,00</p>
-        </figcaption>
-        <figcaption>
-            <img src="https://static.netshoes.com.br/produtos/camiseta-adidas-small-logo-masculina/06/FB8-8557-006/FB8-8557-006_zoom1.jpg?ts=1695699082&ims=544x" alt="Produto 2">
-            <h1>Camisa Adidas</h1>
-            <p>120,00</p>
-        </figcaption>
-        <figcaption>
-            <img src="https://cdn.dooca.store/1816/products/zfenut3jihyngnkr4x7k3rgqd1dljzroqcdr.png?v=1696438035" alt="Produto 3">
-            <h1>Tênis Adidas Grand Count Base 2.0</h1>
-            <p>300,00</p>
-        </figcaption>
-        <figcaption>
-            <img src="https://cdn.bnws3.com.br/b2online.com.br/image/cache/data/produtos/adidas/bermuda/bermuda-shorts-adidas-logo-masculino-marinho---branco-8455-23-06-26-1200x1200.jpg" alt="Produto 4">
-            <h1>Bermuda Short Adidas</h1>
-            <p>120,00</p>
+    <div class="site main-content"><!-- alteração: criei section.products e troquei figcaption por article.card -->
+        <section class="products">
+
+            <article class="card">
+                <div class="thumb">
+                    <img src="https://cdnv2.moovin.com.br/bigcap/imagens/produtos/det/bone-adidas-essentials-logo-ea2c8011fced6ceaeca6f67e8083a2c2.jpg" alt="Boné Adidas Essentials">
+                </div>
+                <h3>Boné Adidas Essentials</h3>
+                <p class="desc">Boné clássico, ajustável, ideal para treinos e dia a dia.</p>
+                <div class="meta">
+                    <div class="price">R$ 50,00</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb">
+                    <img src="https://static.netshoes.com.br/produtos/camiseta-adidas-small-logo-masculina/06/FB8-8557-006/FB8-8557-006_zoom1.jpg?ts=1695699082&ims=544x" alt="Camisa Adidas">
+                </div>
+                <h3>Camisa Adidas</h3>
+                <p class="desc">Camisa leve e confortável para treinos e uso diário.</p>
+                <div class="meta">
+                    <div class="price">R$ 120,00</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb">
+                    <img src="https://cdn.dooca.store/1816/products/zfenut3jihyngnkr4x7k3rgqd1dljzroqcdr.png?v=1696438035" alt="Tênis Adidas Grand Count Base 2.0">
+                </div>
+                <h3>Tênis Adidas Grand Count Base 2.0</h3>
+                <p class="desc">Estilo e conforto para seu dia a dia e treinos leves.</p>
+                <div class="meta">
+                    <div class="price">R$ 300,00</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb">
+                    <img src="https://cdn.bnws3.com.br/b2online.com.br/image/cache/data/produtos/adidas/bermuda/bermuda-shorts-adidas-logo-masculino-marinho---branco-8455-23-06-26-1200x1200.jpg" alt="Bermuda Short Adidas">
+                </div>
+                <h3>Bermuda Short Adidas</h3>
+                <p class="desc">Bermuda leve, respirável e estilosa para esportes e lazer.</p>
+                <div class="meta">
+                    <div class="price">R$ 120,00</div>
+                    <button class="btn">Comprar</button>
+                </div>
+            </article>
+
+        </section>
     </div>
      
 </body>

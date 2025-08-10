@@ -1,110 +1,84 @@
-/* Fundo roxo claro */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f3e6ff; /* roxo bem clarinho */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f3ff; /* roxo bem claro quase branco */
+  display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Sidebar roxa com efeito vidro */
-/* Sidebar roxa transparente flutuante */
+/* Sidebar */
 .sidebar {
-    position: fixed;
-    left: 0;
-    width: 260px;
-    height: calc(100% - 0px); /* mantém margem em cima e embaixo */
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: rgba(80, 18, 124, 0.993); /* roxo translúcido */
-    border-radius: 1px; /* cantos arredondados */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* sombra para dar efeito flutuante */
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #4b0082; /* roxo escuro */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
 }
 
-
-/* Logo */
 .sidebar img {
-    max-width: 140px;
-    margin-bottom: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-/* Menu */
 .sidebar menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar menu li {
-    margin: 8px 0;
+  margin-bottom: 8px;
 }
 
 .sidebar menu a {
-    color: white;
-    text-shadow: 1px 1px 2px black; /* borda preta */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95em;
-    padding: 6px 8px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
 }
 
 .sidebar menu a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Títulos e textos */
-.sidebar h1 {
-    font-size: 1.4em;
-    margin: 0;
-    text-shadow: 1px 1px 2px black;
-}
-
-.sidebar h2 {
-    font-size: 1em;
-    font-weight: 400;
-    margin: 0 0 8px 0;
-    text-shadow: 1px 1px 2px black;
-}
-
-.sidebar p {
-    line-height: 1.3;
-    font-size: 0.85em;
-    margin: 0;
-    text-shadow: 1px 1px 2px black;
+  text-decoration: underline;
 }
 
 /* Conteúdo principal */
 .main-content {
-    margin-left: 280px;
-    padding: 20px;
-    color: black;
+  flex: 1;
 }
 
-.main-content h1 {
-    font-size: 1.6em;
-    margin-bottom: 8px;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
-.main-content p {
-    font-size: 0.95em;
-    max-width: 800px;
-    line-height: 1.4;
+/* Card do produto */
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
 }
-figcaption {
-    font-size: 0.85em;
-    color: #0c0c0c;
-    margin-top: 5px;
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
-figcaption img {
-    width: 300px;
-    height: 300px;
-    vertical-align: middle;
-    margin-right: 5px;
-    border-radius: 5px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+.price {
+  font-weight: bold;
+  color: #4b0082; /* cor combinando com sidebar */
+}
+
+.btn {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3a0066;
 }
